@@ -1,0 +1,31 @@
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background-color: rgb(251, 251, 251);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px 20px;
+}
+
+.logo {
+  width: 50px;
+}
+
+li {
+  list-style: none;
+}
+
+.navLink {
+  text-decoration: none;
+  color: black;
+}
+
+.navLink:hover {
+  text-decoration: underline;
+  color: orange;
+}
+
+.links {
+  display: flex;
+  gap: 15px;
+}
