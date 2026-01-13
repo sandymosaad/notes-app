@@ -8,9 +8,7 @@
     padding: 20px;
     border-radius: 10px;
 }
-.header{
-    color: orange;
-}
+
 .formLabel{
    font-size: 18px;
    font-weight: 400;
@@ -28,17 +26,4 @@
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
-}
-
-.button {
-    padding: 10px 20px;
-    background-color: orange;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.button:hover {
-    background-color: darkorange;
 }

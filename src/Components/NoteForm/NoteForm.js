@@ -57,7 +57,7 @@ export default function NoteForm({ onAdd ,onEdit, role , noteValues}) {
 
   return (
     <form onSubmit={handleSubmit} className={style.form}>
-      <h1 className={style.header} >{role} Note</h1>
+      <h1 className='header' >{role} Note</h1>
 
       <div>
         <label className={style.formLabel}>Title:</label>
@@ -95,7 +95,7 @@ export default function NoteForm({ onAdd ,onEdit, role , noteValues}) {
         </select>
       </div>
 
-      <button type="submit" className={style.button}>{role}</button>
+      <button type="submit" className="button">{role}</button>
     </form>
   );
 }

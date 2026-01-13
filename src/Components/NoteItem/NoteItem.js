@@ -1,28 +1,27 @@
 import { Link } from "react-router-dom"
-import style from "./noteItem.module.css"
 
 export default function NoteItem({note}){
     return <>
-    <div className={style.card}>
-        <div className={style.titleContainer}>
-            <h3 className={style.cardTitle}>
+    <div className="card">
+        <div className="cardDisplay">
+            <h3 >
                 {note.title}
             </h3>
             
-            <p className= {style.noteStatus}>
+            <p className="noteStatus">
                 {note.status}
             </p>
         </div>
 
-        <p className={style.cardBody}>
+        <p >
             {note.content}
         </p>
 
-        <div className={style.date}>
+        <div className="cardDisplay">
             <p>
                 {new Date(note.createdAt).toLocaleDateString()}
             </p>
-            <Link className={style.button} to={`/edit/${note.id}`}>Edit</Link>
+            <Link className="button" to={`/edit/${note.id}`}>Edit</Link>
             
             <p> 
                 {new Date(note.createdAt).toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'})}
