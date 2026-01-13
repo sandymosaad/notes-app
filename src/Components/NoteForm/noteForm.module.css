@@ -8,7 +8,9 @@
     padding: 20px;
     border-radius: 10px;
 }
-
+.header{
+    color: orange;
+}
 .formLabel{
    font-size: 18px;
    font-weight: 400;

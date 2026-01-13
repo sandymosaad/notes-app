@@ -11,7 +11,7 @@ export default function Navbar() {
 
       <ul className={style.links}>
         <li>
-          <Link className={style.navLink} to="/">Home</Link>
+          <Link className={style.navLink} to="/">All Notes</Link>
         </li>
         <li>
           <Link className={style.navLink} to="/add">Add Note</Link>

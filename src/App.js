@@ -30,9 +30,23 @@ function App() {
 
   }
 
-function editNote(id){
-  console.log('sdsf')
-}
+  function editNote(updatedNote){
+    setNotes((prevNotes)=>{
+      const updatedNotes = prevNotes.map((note)=>{
+        if(note.id === updatedNote.id){
+            note.id = updatedNote.id;
+            note.title = updatedNote.title;
+            note.content = updatedNote.content;
+            note.status = updatedNote.status;
+            note.createdAt = updatedNote.createdAt;
+        }
+        return note
+      })
+      localStorage.setItem("notes", JSON.stringify(updatedNotes)); 
+      return updatedNotes;
+    })
+    
+  }
 
   const routers = createBrowserRouter([
      {
