@@ -11,3 +11,9 @@
   margin: auto;
   border-radius: 10px; 
 }
+
+@media screen and (max-width:560px){
+    .addNoteImg {
+      display: none;
+    }
+}

@@ -8,7 +8,7 @@ export default function AddNote({ onAdd }) {
   return (
     <div className={style.container}>
       <img className={style.addNoteImg} src={addNote} alt="Add Note" />
-      <NoteForm onAdd={onAdd} role={role} />
+      <NoteForm onAdd={onAdd} role={role}  />
     </div>
   );
 }
