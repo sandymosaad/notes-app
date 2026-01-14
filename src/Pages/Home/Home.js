@@ -10,6 +10,7 @@ export default function Home({notes, onDelete}) {
         All Notes
     </h1>    
         {notes.map((note) => (
+            // Use the <NoteItem /> component here to keep the UI consistent and reduce code duplication.
             <div key={note.id} className="card">
                 <div className="cardDisplay">
                     <h3>{note.title}</h3>
